@@ -3,7 +3,6 @@ import { View, Linking } from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import CafeCount from './CafeCount';
 import InfoButton from './InfoButton';
-
 // https://developers.google.com/maps/documentation/urls/guide
 const URL = "https://www.google.com/maps/dir/?api=1&destination=";
 export default class MapsScreen extends Component {
@@ -21,7 +20,6 @@ export default class MapsScreen extends Component {
 		// latLng param is passed from Navigation and used to
 		// set initialRegion on MapView below.
 		let description = 'Zen Cafe';
-
 		return (<View style={
 			[{ flex: 1, justifyContent: 'center' },
 			{
@@ -39,14 +37,12 @@ export default class MapsScreen extends Component {
 			}}>
 				<Marker key={name} coordinate={latLng}
 					title={name} description={description}>
-					<Callout alphaHitTest tooltip
-					>
+					<Callout alphaHitTest tooltip>
 					</Callout>
 				</Marker>
+				<CafeCount nCafes={this.state.nCafes} />
+          		<InfoButton onPress={this.props.openHelpModal} />
 			</MapView>
-			<CafeCount nCafes={this.state.nCafes} />
-			<InfoButton onPress={this.props.openHelpModal} />
-
 		</View>);
 	}
 }
