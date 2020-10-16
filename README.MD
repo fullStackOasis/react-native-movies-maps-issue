@@ -43,4 +43,4 @@ npx react-native start
 
 [You can see the behavior in this YouTube video](https://youtu.be/3B6to3qN4HU). I've got a blog post that explains the [error messages you might see when your React Native MapView has this issue.](https://www.fullstackoasis.com/articles/2020/10/20/index4-count5-addinarray-addviewinner-error-react-native-maps/)
 
-![demo react native maps crash in Android](https://github.com/fullStackOasis/react-native-movies-maps-issue/raw/master/react-native-maps-invalid-child-components-1.gif)
+<img alt="demo react native maps crash in Android" src="https://github.com/fullStackOasis/react-native-movies-maps-issue/raw/master/react-native-maps-invalid-child-components-1.gif" width="300">
